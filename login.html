@@ -8,33 +8,36 @@
         <script src='bootstrap/js/bootstrap.min.js'></script>
     </head>
     <body>
-       <nav class="navbar float-end">
+       <nav class="navbar">
            <h1>AAJ - Planejando Rotinas</h1>
-           <ul>
+           <ul >
                <li><a href="index.html">Inicio</a></li>
                <li><a href="sobre_nos.html">Sobre nós</a></li>
                <li><a href="contato.html"> Contato</a></li>
                <li><a href="cadastro.html">Cadastre-se</a></li>
-               <li><a href="login.html">Login</a></li>
+               <li ><a style="color:rgb(63, 221, 221);" href="login.html">Login</a></li>
            </ul>
        </nav>
-       <main>
-        <form>
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Email address</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-            </div>
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label">Password</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-              <input type="checkbox" class="form-check-input" id="exampleCheck1">
-              <label class="form-check-label" for="exampleCheck1">Check me out</label>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
+       <main class="container">
+           <center>
+            <form class="form_login">
+                <h2>Faça o login para entrar</h2>
+                <div class="mb-3 col-6">
+                    <input type="email" class="form-control" placeholder="Digite seu email...">
+                </div>
+                <div class="mb-3 col-6">
+                    <input type="password" class="form-control" placeholder="Digite sua senha...">
+                </div>
+                 <div class="mb-3 col-6">
+                    <button type="submit" class="btn btn-lg btn-block btn-danger">Entrar</button>
+                </div>
+                <div class="mb-3 form-check col-6 text-left" >
+                    <input type="checkbox" class="form-check-input" >
+                    <label class="form-check-label" for="exampleCheck1">Lembre-se de mim</label>
+                    <p>Ainda não é cadatrado?<a style="color: rgb(77, 194, 194);"href="cadastro.html"> Clique aqui e cadastre-se</a></p>
+                </div>
+            </form>
+           </center>
        </main>
        <footer>
         <span class='text-muted'> &copy 2021 grupo AAJ</span>
