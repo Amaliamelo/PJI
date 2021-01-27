@@ -67,7 +67,7 @@ main{
     min-height: 50vh;
     padding: 3% 3% 5% 5%;
 }
-main h1{
+main h1, .dropdown-menu a{
     color: rgb(255, 125, 125);
 }
 .divcaixas{
@@ -129,7 +129,7 @@ footer{
     margin: 1% 17% 1% 15%;
     color: white;
 }
-form h2, .mes{
+form h2, .mes, .h2{
     color: rgb(255, 128, 128);
     font-weight: 900;
     text-shadow: rgb(72, 206, 206) 2px 3px 2px;
@@ -220,4 +220,46 @@ form h2, .mes{
     .day {
         height: 5vw;
     }
+}
+.imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+}
+
+img.avatar {
+	width: 20%;
+	height: auto;
+	border-radius: 50%;
+}
+
+.eu{
+	width: 200px;
+	height: 200px;
+    border-radius: 100px;
+}
+li{
+	list-style: none;
+}
+.linha1{
+	border-left: 2px solid rgb(118, 200, 255);
+  	height: auto;
+}
+.bd-placeholder-img {
+	font-size: 1.125rem;
+	text-anchor: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+
+  @media (min-width: 768px) {
+	.bd-placeholder-img-lg {
+	  font-size: 3.5rem;
+	}
+  }
+.conf{
+    margin-top: 8%;
+    font-size: 1.2rem;
 }
