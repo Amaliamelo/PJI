@@ -151,8 +151,8 @@
                   <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
                   
                   <div class="container">
-                    <img align="Left" class="" src="img/calendario.png" alt="acesse o calendario" width=350 height=300 style="margin-left:10%; box-shadow:none; position:absolute;">
-                    <div style="margin: 10% 0 0 45%;">
+                    <img align="Left" src="img/calendario.png" alt="acesse o calendario" width=350 height=300 style="margin-left:10%; box-shadow:none; position:absolute;">
+                    <div style="margin: 10% 0 0 45%; position: absolute;" class="carousel-inner">
                       <h1>Calendário</h1>
                       <p>Acesse o calendário para ver suas atividades do mês!</p>
                       <p><a class="btn btn-lg btn-primary" href="calendario_filho.html" role="button">Acessar</a></p>
@@ -164,7 +164,7 @@
                     
                     <div class="container">
                         <img align="Left" class="" src="img/grafico.png" alt="acesse o calendario" width=350 height=300 style="margin-left:10%; box-shadow:none; position:absolute;">
-                        <div style="margin: 10% 0 0 45%;">
+                        <div style="margin: 10% 0 0 45%; position: absolute;">
                             <h1>Estatísticas</h1>
                             <p>Acesse as estatísticas para acompanhar seu desempenho!</p>
                             <p><a class="btn btn-lg btn-primary" href="estatísticas_filho.html" role="button">Acessar</a></p>
@@ -176,7 +176,7 @@
 
                     <div class="container">
                         <img align="Left" class="" src="img/recompensa.png" alt="acesse as recompensas" width=410 height=250 style="margin-left:5%; box-shadow:none; position:absolute;">
-                        <div style="margin: 10% 0 0 45%;">
+                        <div style="margin: 10% 0 0 45%; position: absolute;">
                             <h1>Recompensas</h1>
                             <p>Acesse as recompensas e acompanhe suas conquistas!</p>
                             <p><a class="btn btn-lg btn-primary" href="estatísticas_filho.html" role="button">Acessar</a></p>
@@ -249,15 +249,11 @@
                       </button>
                     </div>
                     <div class="modal-body">
-                        <label class="h2 text-center" for="perfil em que está">Você está no perfil do responsavel</label>
+                        <label class="h2 text-center" for="perfil em que está">Você está no perfil da criança</label>
                         <div class="imgcontainer">
-                            <img src="img/img_avatar2.png" alt="Avatar" class="avatar" />
+                            <img src="img/crianca.png" alt="Avatar" class="" width=110 height=100 style="box-shadow:none; "/>
                         </div>  
-                        <select class="custom-select">
-                            <option selected>Selecione para qual perfil deseja ir</option>
-                            <option value="1">Filho1</option>
-                            <option value="2">Filho2</option>
-                          </select>              
+                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block">voltar para parfil do responsável</button>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
