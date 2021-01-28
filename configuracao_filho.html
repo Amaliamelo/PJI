@@ -16,11 +16,11 @@
             <div class="container-fluid">
                 <h1>AAJ - Planejando Rotinas</h1>
                 <ul>
-                    <li><a href="home_pai.html">Home</a></li>
-                    <li><a href="calendario_pai.html">Calendario</a></li>
-                    <li><a href="estatistica.html">Estatistica</a></li>
-                    <li><a href="tarefas.html">Tarefas</a></li>
-                    <li><a href="recompensas.html">Recompensas</a></li>
+                    <li><a href="home_filho.html">Home</a></li>
+                    <li><a href="calendario_filho.html">Calendario</a></li>
+                    <li><a href="estatistica_filho.html">Estatistica</a></li>
+                    <li><a href="tarefas_filho.html">Tarefas</a></li>
+                    <li><a href="recompensas_filho.html">Recompensas</a></li>
                     <li></li>
                         <div class="dropdown" style="padding: 5px 15px; display: inline-block; ">
                             <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
@@ -28,7 +28,7 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li><a class="dropdown-item" data-toggle="modal" data-target="#trocar_perfil">Trocar de perfil</a></li>
-                                <li><a class="dropdown-item" href="configuracao.html">Configurações</a></li>
+                                <li><a class="dropdown-item" href="configuracao_filho.html">Configurações</a></li>
                                 <li><a class="dropdown-item" data-toggle="modal" data-target="#sair">Sair</a></li>
                             </div>
                         </div>
@@ -41,8 +41,8 @@
             <div class="row m-5 p-5">
                 <div class="col-sm p-3" >
                   <center>
-                    <img src="img/img_avatar2.png" class="eu center" alt="Foto do Perfil"></img>
-                    <h2 class="h2 text-center">Responsavel</h2>
+                    <img src="img/filho2.png" class="eu center" alt="Foto do Perfil"></img>
+                    <h2 class="h2 text-center">Filho</h2>
                   </center>
                 </div>
                 <div class="linha1"></div>
@@ -58,33 +58,11 @@
                     </div>
                     <div class="row">
                       <div class="col">
-                        <i class="fas fa-envelope"></i>
-                        Usuario@email.com
+                        <i class="fas fa-calendar-alt"></i> 
+                        Nascimento: 10/02/2015                       
                       </div>
                       <div class="col">
                         <button class="btn btn-outline-danger">Alterar</button>
-                      </div>
-                    </div>
-                    <div class="row">
-                      <div class="col">
-                        <i class="fas fa-retweet"></i>
-                      <a class="text-danger">Alterar Senha</a>
-                      </div>
-                    </div>
-                    <div class="row" style="margin-top: 5%;">
-                      <div class="col">
-                        <i class="fas fa-child"></i>
-                        Alterar dados dos filhos
-                       </div>
-                    </div>
-                    <div class="row">
-                      <div class="col-6">
-                        <select class="form-control small" aria-label="Caixa de selecionar o filho">
-                            <option selected>Selecione </option>
-                        </select>
-                      </div>
-                      <div class="col">
-                        <button class="btn btn-outline-danger">Alterar dados</button>
                       </div>
                     </div>
                 </div>
@@ -121,34 +99,30 @@
 
         <!--Trocar perfil-->
         <div class="modal fade" id="trocar_perfil" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                    <label class="h2 text-center" for="perfil em que está">Você está no perfil do Responsavel</label>
-                    <div class="imgcontainer">
-                        <img src="img/img_avatar2.png" alt="Avatar" class="avatar" />
-                    </div>  
-                    <select class="custom-select">
-                        <option selected>Selecione para qual perfil deseja ir</option>
-                        <option value="1">Filho1</option>
-                        <option value="2">Filho2</option>
-                      </select>              
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  <a href="home_filho.html">
-                    <button type="button" class="btn btn-danger">Trocar</button>
-                </a> 
-                </div>
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                  <label class="h2 text-center" for="perfil em que está">Você está no perfil da criança</label>
+                  <div class="imgcontainer">
+                      <img src="img/crianca.png" alt="Avatar" class="" width=110 height=100 style="box-shadow:none; "/>
+                  </div>  
+                  <button type="button" class="btn btn-outline-secondary btn-lg btn-block">voltar para parfil do responsável</button>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                <a href="#">
+                  <button type="button" class="btn btn-danger">Trocar</button>
+              </a> 
               </div>
             </div>
           </div>
-        <!-------------------------->
+        </div>
+      <!-------------------------->   
     <script>
       $(function () {
         $('.dropdown-toggle').dropdown();
