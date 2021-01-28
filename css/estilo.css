@@ -67,9 +67,11 @@ main{
     min-height: 50vh;
     padding: 3% 3% 5% 5%;
 }
-main h1{
+ .titulo{
     color: rgb(255, 125, 125);
+    text-shadow: rgb(72, 206, 206) 3px 2px 5px;
 }
+
 .divcaixas{
     position: relative;
 } 
