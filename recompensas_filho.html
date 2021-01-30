@@ -18,7 +18,6 @@
                 <ul>
                     <li><a href="home_filho.html">Home</a></li>
                     <li><a href="calendario_filho.html">Calendario</a></li>
-                    <li><a href="estatistica_filho.html">Estatistica</a></li>
                     <li><a href="tarefas_filho.html">Tarefas</a></li>
                     <li><a href="recompensas_filho.html" style="border-bottom:3px solid #9fd6c8;">Recompensas</a></li>
                     <li></li>
@@ -36,17 +35,23 @@
                 </ul>
             </div>
           </nav>
+          <img align="Right" class="img-responsiva" src="img/monstrinho.png" alt="monstrinho" width=180 height=110 style="margin-top:0; box-shadow:none;">
         <!--................................... fim do cabeçalho......................................-->
         <div class="container text-center">
             <h1 class="titulo " style="margin-top:50px;">Recompensas</h1>
             <h4 style="margin-top:50px;">Sua próxima recompensa:<b>Carrinho!</b></h4>
-            <p>Total de tarefas:<b>8</b> Faltam: <b>2</b></p>
+            <p>Total de tarefas:<b>8</b> Faltam: <b>8</b></p>
             <i class="fas fa-star" style="color:rgb(77, 175, 255);"></i>
             <i class="fas fa-star" style="color:rgb(77, 175, 255);"></i>
             <i class="fas fa-star" style="color:rgb(77, 175, 255);"></i>
             <h4 style="color:rgb(77, 175, 255); margin-top:50px;" class="text-left font-family:Arial;">Suas Recompensas</h4>
             <table class="table table-primary" style="border-radius: 10px; box-shadow:0 0 0.5em black;">
                 <tr>
+                  <td colspan="3">
+                    Você ainda não possui recompensas
+                  </td>
+                </tr>
+                <!--<tr>
                     <td>
                         26/03/2020
                     </td>
@@ -57,7 +62,7 @@
                         3 tarefas
                     </td>
                 </tr>
-                <tr>
+                 <tr>
                     <td>
                         15/05/2020
                     </td>
@@ -89,7 +94,7 @@
                     <td>
                         7 tarefas
                     </td>
-                </tr>
+                </tr> -->
             </table>
         </div>
 
@@ -132,12 +137,14 @@
                         <div class="imgcontainer">
                             <img src="img/crianca.png" alt="Avatar" class="" width=110 height=100 style="box-shadow:none; "/>
                         </div>  
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block">voltar para parfil do responsável</button>
+                        <select class="form-control" aria-label="Caixa de selecionar o filho">
+                          <option selected>Voltar para o perfil do responsavel</option>
+                      </select>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                      <a href="#">
-                        <button type="button" class="btn btn-danger">Trocar</button>
+                      <a href="home_pai.html">
+                        <button type="button" class="btn btn-danger" href="home_pai.html">Trocar</button>
                     </a> 
                     </div>
                   </div>

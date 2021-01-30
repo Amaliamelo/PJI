@@ -18,7 +18,6 @@
                 <ul>
                     <li><a href="home_filho.html">Home</a></li>
                     <li><a href="calendario_filho.html">Calendario</a></li>
-                    <li><a href="estatistica_filho.html">Estatistica</a></li>
                     <li><a href="tarefas_filho.html" style="border-bottom:3px solid #9fd6c8;">Tarefas</a></li>
                     <li><a href="recompensas_filho.html">Recompensas</a></li>
                     <li></li>
@@ -36,61 +35,42 @@
                 </ul>
             </div>
           </nav>
+          <img align="Right" class="img-responsiva" src="img/monstrinho.png" alt="monstrinho" width=180 height=110 style="margin-top:0; box-shadow:none;">
         <!--................................... fim do cabeçalho......................................-->
-        <div class="container">
+        <div class="">
             <h1 class="titulo text-center" style="margin-top:50px;">Tarefas</h1>
             <div class="row container-fluid" style="padding-top: 50px;">
-                <div class="col col-lg-6 offset-lg-0" style="padding: 20px 0 20px 20px; box-shadow:none; border-right: 1px solid silver;">
+                <div class="col col-lg-4 offset-lg-1" style="padding: 20px 0 20px 20px; box-shadow:none; border-right: 1px solid silver;">
                     <h5 style="color:rgb(75, 74, 74);">Suas Atividades de Hoje:</h5><br/>
-                    <input type="checkbox" name="tarefa"/>  Tarefa da escola <br/><br/>
-                    <input type="checkbox" name="tarefa"/>  Leitura <br/><br/>
-                    <input type="checkbox" name="tarefa"/>  Organizar o quarto <br/><br/>
-                    <input type="checkbox" name="tarefa"/>  Natação <br/>
+                    <input type="checkbox" name="tarefa"/>  Futebol <br/><br/>
                 </div>
-                <div class="col col-lg-6 offset-lg-0 text-center" style="padding: 20px 0 20px 20px; box-shadow:none;">
-                    <h5 style="color:rgb(75, 74, 74);">Situação</h5>
-                   <table class="table text-center">
-                      <tr>
-                        <th>
-                            Tarefa
-                        </th>
-                        <th>
-                            Status
-                        </th>
-                      </tr>
-                      <tr>
-                        <td>
-                            Tarefa da escola
-                        </td>
-                        <td>
-                            <img class="img-responsiva" src="img/feliz.png" alt="avaliacao" width=30 height=30 style="box-shadow:none;">
-                        </td>
+                <div class="col col-lg-5 offset-lg-0 text-center" style="padding: 20px 0 20px 20px; box-shadow:none;">
+                  <h5 style="color:rgb(75, 74, 74);">Situação</h5>
+                  <table class="table text-center">
+                    <tr>
+                      <th>
+                          Tarefa
+                      </th>
+                      <th>
+                          Status
+                      </th>
                     </tr>
                     <tr>
-                        <td>
-                            Leitura
-                        </td>
-                        <td>
-                            <img class="img-responsiva" src="img/feliz.png" alt="avaliacao" width=30 height=30 style="box-shadow:none;">
-                        </td>
-                      </tr>
-                      <tr>
-                          <td>
-                            Organizar o quarto
-                          </td>
-                          <td>
-                                <img class="img-responsiva" src="img/medio.png" alt="avaliacao" width=30 height=30 style="box-shadow:none;">
-                          </td>
-                      </tr>
-                      <tr>
-                          <td>
-                              Natação
-                          </td>
-                          <td>
-                                <img class="img-responsiva" src="img/triste.png" alt="avaliacao" width=30 height=30 style="box-shadow:none;">
-                          </td>
-                      </tr>
-                   </table>
+                      <td>
+                          Futebol
+                      </td>
+                      <td>
+                          <img class="img-responsiva" src="img/medio.png" alt="avaliacao" width=30 height=30 style="box-shadow:none;">
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+            
+                <div class="col col-lg-2 offset-lg-0" style="padding: 20px 0 20px 20px; box-shadow:none; border: 2px solid rgb(77, 175, 255);">
+                  <h6><b>Legenda:</b></h6>
+                  <p><img class="img-responsiva" src="img/feliz.png" alt="avaliacao" width=20 height=20 style="box-shadow:none;"> -> Tarefa Concluída</p>
+                  <p><img class="img-responsiva" src="img/medio.png" alt="avaliacao" width=20 height=20 style="box-shadow:none;"> -> Tarefa Pendente</p>
+                  <p><img class="img-responsiva" src="img/triste.png" alt="avaliacao" width=20 height=20 style="box-shadow:none;"> -> Tarefa em Atraso</p>
                 </div>
             </div>
             
@@ -135,11 +115,13 @@
                         <div class="imgcontainer">
                             <img src="img/crianca.png" alt="Avatar" class="" width=110 height=100 style="box-shadow:none; "/>
                         </div>  
-                        <button type="button" class="btn btn-outline-secondary btn-lg btn-block">voltar para parfil do responsável</button>
+                        <select class="form-control" aria-label="Caixa de selecionar o filho">
+                          <option selected>Voltar para o perfil do responsavel</option>
+                      </select>
                     </div>
                     <div class="modal-footer">
                       <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                      <a href="#">
+                      <a href="home_pai.html">
                         <button type="button" class="btn btn-danger">Trocar</button>
                     </a> 
                     </div>
