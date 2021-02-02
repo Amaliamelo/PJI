@@ -16,7 +16,7 @@
             <div class="container-fluid">
                 <h1>AAJ - Planejando Rotinas</h1>
                 <ul>
-                    <li><a href="home_pai.html"  style="border-bottom:3px solid #9fd6c8;">Home</a></li>
+                    <li><a href="home_pai_cadastrado.html"  style="border-bottom:3px solid #9fd6c8;">Home</a></li>
                     <li><a href="calendario_pai.html">Calendario</a></li>
                     <li><a href="estatistica.html">Estatistica</a></li>
                     <li><a href="tarefas.html">Tarefas</a></li>
@@ -28,7 +28,7 @@
                             </button>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                               <li><a class="dropdown-item" data-toggle="modal" data-target="#trocar_perfil">Trocar de perfil</a></li>
-                              <li><a class="dropdown-item" href="configuracao.html">Configurações</a></li>
+                              <li><a class="dropdown-item" href="configuracao_cadastrar.html">Configurações</a></li>
                               <li><a class="dropdown-item" data-toggle="modal" data-target="#sair">Sair</a></li>
                             </div>
                         </div>
@@ -88,10 +88,10 @@
                 
       
               <div class="row mb-2">
-                <div class="col-md-12">
+                <div class="col-md-6">
                   <div class="card flex-md-row mb-4 box-shadow align-items-center">
                     <div class="card-body d-flex flex-column align-items-center">
-                      <h2 class="d-inline-block mb-2 text-center">Nenhum filho cadastrado</h2>
+                      <h2 class="d-inline-block mb-2 text-center">Cadastrar +</h2>
                       <h3 class="mb-2">
                         <button class="btn btn-lg btn-outline-danger" data-toggle="modal" data-target="#cadastrar_filho">Cadastre um filho</button>
                       </h3>
@@ -99,7 +99,20 @@
                     <img class="card-img-right flex-auto d-none d-md-block" src="img/filho.png" alt="Card image cap">
                   </div>
                 </div>
-              
+               <div class="col-md-6">
+                  <div class="card flex-md-row mb-4 box-shadow align-items-center">
+                    <div class="card-body d-flex flex-column align-items-center">
+                      <h2 class="d-inline-block mb-2 text-center">Nome do Filho</h2>
+                      <h3 class="mb-0">
+                        <div class="btn-group" role="group" aria-label="Basic example">
+                          <a href="tarefas.html"><button type="button" class="btn btn-outline-danger">Tarefas</button></a>
+                          <a href="recompensas.html"><button type="button" class="btn btn-outline-danger">Recompensas</button></a>
+                        </div>
+                      </h3>
+                    </div>
+                    <img class="card-img-right flex-auto d-none d-md-block" src="img/filho3.png" alt="Card image cap">
+                  </div>
+                </div>
               </div>
             </div>
         </div>
@@ -144,8 +157,7 @@
                   </div>  
                   <select class="custom-select">
                       <option selected>Selecione para qual perfil deseja ir</option>
-                      <option value="1">Filho1</option>
-                      <option value="2">Filho2</option>
+                      <option value="1">Fernanda</option>
                     </select>              
               </div>
               <div class="modal-footer">
@@ -186,9 +198,7 @@
                             <input type="password" class="form-control" placeholder="Confirme senha...">
                         </div>
                         <div class="mb-3 col-12">
-                          <a href="home_pai_cadastrado.html">                        
-                              <button type="button"  class="btn  btn-block btn-danger">Cadastrar</button>
-                          </a>  
+                            <button type="submit" class="btn btn-lg btn-block btn-danger">Cadastrar</button>
                         </div>
                     </form> 
                 </div>

@@ -2,7 +2,7 @@
 <html lang="pt-BR">
     <head>
         <meta charset="utf-8" />
-        <title> Tarefas</title>
+        <title> Configurações </title>
         <script src='js/jquery-3.5.1.min.js'></script>
         <link rel="stylesheet" href="css/estilo.css" type="text/css" />
         <link href='bootstrap/css/bootstrap.min.css' rel='stylesheet' />  
@@ -16,11 +16,11 @@
             <div class="container-fluid">
                 <h1>AAJ - Planejando Rotinas</h1>
                 <ul>
-                    <li><a href="home_pai.html"  >Home</a></li>
-                    <li><a href="calendario_pai.html">Calendario</a></li>
-                    <li><a href="estatistica.html">Estatistica</a></li>
-                    <li><a href="tarefas.html" style="border-bottom:3px solid #9fd6c8;">Tarefas</a></li>
-                    <li><a href="recompensas.html">Recompensas</a></li>
+                    <li><a href="home_pai_cadastrado.html">Home</a></li>
+                    <li><a href="calendario_pai_cadastrado.html">Calendario</a></li>
+                    <li><a href="estatistica_pai_cadastrada.html">Estatistica</a></li>
+                    <li><a href="tarefas_cadastrado2.html">Tarefas</a></li>
+                    <li><a href="recompensas_cadastrada.html">Recompensas</a></li>
                     <li></li>
                         <div class="dropdown" style="padding: 5px 15px; display: inline-block; ">
                             <button class="btn btn-danger dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown"  aria-haspopup="true" aria-expanded="false">
@@ -35,85 +35,66 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-        <div class="row m-0">
-            <div class="col-6 p-5" >
-                <center>
-                    <form class="form_tarefas_pai ">
-                        <h4  class="h2">Cadastre tarefas para você:</h4>
-                        <div class="mb-3 ">
-                            <input type="text" class="form-control" placeholder="Nova tarefa...">
-                        </div>
-                        <div class="mb-3 ">
-                            <input type="date" class="form-control" placeholder="Data...">
-                        </div>
-                        <div class="mb-3 col-4">
-                            <a href="tarefas_cadastrado1.html">                        
-                                <button type="button"  class="btn  btn-block btn-danger">Cadastrar</button>
-                            </a>                        
-                        </div>
-                    </form>               
-                <div class="linha"></div>
-                <form class="form_tarefas_filho ">
-                    <h4  class="h2">Cadastre tarefas para seu filho:</h4>
-                    <div class="mb-3 ">
-                        <select class="form-control" aria-label="Caixa de selecionar o filho">
-                            <option selected>Selecione um filho</option>
+          </nav>
+          <div class="container">
+
+            <div class="row m-5 p-5">
+                <div class="col-sm p-3" >
+                  <center>
+                    <img src="img/img_avatar2.png" class="eu center" alt="Foto do Perfil"></img>
+                    <h2 class="h2 text-center">Responsavel</h2>
+                  </center>
+                </div>
+                <div class="linha1"></div>
+                <div class="col-sm conf" >
+                    <div class="row">
+                      <div class="col">
+                        <i class="fas fa-user-circle"></i>
+                        Nome Completo
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-outline-danger">Alterar</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <i class="fas fa-envelope"></i>
+                        Usuario@email.com
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-outline-danger">Alterar</button>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <i class="fas fa-retweet"></i>
+                      <a class="text-danger">Alterar Senha</a>
+                      </div>
+                    </div>
+                    <div class="row" style="margin-top: 5%;">
+                      <div class="col">
+                        <i class="fas fa-child"></i>
+                        Alterar dados dos filhos
+                       </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6">
+                        <select class="form-control small" aria-label="Caixa de selecionar o filho">
+                            <option selected>Fernanda </option>
                         </select>
-                    </div>
-                    <div class="mb-3 ">
-                        <input type="text" class="form-control" placeholder="Nova tarefa...">
-                    </div>
-                    <div class="mb-3 ">
-                        <input type="date" class="form-control" placeholder="Data...">
-                    </div>
-                    <div class="mb-3 col-4">
-                        <button type="button"  class="btn  btn-block btn-danger">Cadastrar</button>
-                    </div>
-                </form>
-            </center>
-            </div>
-            <div class="col-6 p-5" >
-                <div class="card border-danger mb-3" >
-                    <div class="card-header">Tarefas responsavel</div>
-                    <div class="card-body text-danger">
-                        <table class="table text-center table-bordered">
-                            <thead class="thead-danger">
-                            <tr>
-                                <th scope="col">Tarefa</th>
-                                <th scope="col">Data</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td colspan="2">Aqui aparecerá suas tarefas</td>
-                            </tr>
-                            </tbody>
-                        </table>
+                      </div>
+                      <div class="col">
+                        <button class="btn btn-outline-danger">Alterar dados</button>
+                      </div>
                     </div>
                 </div>
-                <div class="card border-warning mb-3" >
-                    <div class="card-header">Tarefas Filho</div>
-                    <div class="card-body">
-                        <table class="table text-center table-bordered">
-                            <thead class="thead-danger">
-                            <tr>
-                                <th scope="col">Filho</th>
-                                <th scope="col">Tarefa</th>
-                                <th scope="col">Data</th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            <tr>
-                                <td colspan="3">Aqui aparecerá as tarefas de seu filho</td>
-                            </tr>
-                            </tbody>
-                        </table>                    
-                    </div>
-                </div>
+                        
             </div>
         </div>
-        <!--Modais-->
+           
+             
+
+<!--Modais-->
 
         <!--sair-->
         <div class="modal fade" id="sair" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -148,7 +129,7 @@
                   </button>
                 </div>
                 <div class="modal-body">
-                    <label class="h2 text-center" for="perfil em que está">Você está no perfil do responsavel</label>
+                    <label class="h2 text-center" for="perfil em que está">Você está no perfil do Responsavel</label>
                     <div class="imgcontainer">
                         <img src="img/img_avatar2.png" alt="Avatar" class="avatar" />
                     </div>  
@@ -160,7 +141,7 @@
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                  <a href="#">
+                  <a href="home_filho.html">
                     <button type="button" class="btn btn-danger">Trocar</button>
                 </a> 
                 </div>
@@ -168,7 +149,6 @@
             </div>
           </div>
         <!-------------------------->
-       
     <script>
       $(function () {
         $('.dropdown-toggle').dropdown();
