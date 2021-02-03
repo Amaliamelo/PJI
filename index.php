@@ -12,7 +12,7 @@
            <h1>AAJ - Planejando Rotinas</h1>
 
            <ul>
-               <li><a href="index.html"  style="border-bottom:3px solid #9fd6c8;">Inicio</a></li>
+               <li><a href="index.php"  style="border-bottom:3px solid #9fd6c8;">Inicio</a></li>
                <li><a href="sobrenos.html">Sobre nós</a></li>
                <li><a href="contato.html">Contato</a></li>
                <li><a href="cadastro.html">Cadastre-se</a></li>
